@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Char Counter App</title>
+    
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+    <!-- Compiled and minified CSS -->
+    
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Real TIme Character Counter</h2>
+      <p  class="p">
+        Check your English text for grammar, spelling, and punctuation errors
+        with thapa technical real time char counter
+      </p>
+      <textarea
+        id="textarea"
+        class="textarea"
+        maxlength="150"
+        placeholder="Please write here"
+      ></textarea>
+
+      <button onclick="copyText()">Copy Text</button>
+      <div class="counter-container">
+        <p class="p">Total character: <span id="total-counter">0</span></p>
+        <p class="p">Remaining character: <span id="rem-counter">150</span></p>
+      </div>
+      <div class="text-copied"></div>
+    </div>
+  </body>
+</html>

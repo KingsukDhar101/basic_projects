@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+}
+body {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+}
+
+.container {
+  padding: 30px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(204, 204, 204, 0.24);
+  border-radius: 12px;
+}
+
+h2 {
+  color: rgb();
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: -0.2px;
+}
+p {
+  max-width: 400px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: 100%;
+  height: 15em;
+  padding: 10px;
+  position: relative;
+  resize: none;
+  box-shadow: 0 10px 50px 0px rgb(109 117 141 / 20%);
+  border: 0.5px solid rgb(231, 233, 245);
+  border-radius: 12px;
+  background-color: #fff;
+}
+.textarea:focus {
+  outline: none;
+  border: 0.3px solid rgba(43, 45, 56, 0.3);
+}
+
+p,
+textarea {
+  font-size: 15px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 1.6;
+}
+button {
+  background-color: rgb(17, 166, 131);
+  color: #fff;
+  border-radius: 6px;
+  padding: 7px 10px;
+  border: none;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  margin-top: -48px;
+  cursor: pointer;
+}
+button:focus,
+button:hover {
+  background-color: rgb(42, 201, 164);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.counter-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.text-copied{
+  border: 1px solid rgba(204, 204, 204, 0.192);
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 460px){
+  .counter-container{
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  h2{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  p{
+    margin: 3px 0;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  
+  h2{
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+  p, textarea{
+    margin: 3px 0;
+    font-size: 11px;
+  }
+  
+}
